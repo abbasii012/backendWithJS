@@ -1,6 +1,6 @@
-import express from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
+import express from 'express';
 
 
 const app = express();
@@ -23,11 +23,11 @@ app.use(express.static('public'))
 
 // router import
 
-import userRouter from "./routes/user.routers.js"
+import userRouter from "./routes/user.routers.js";
 
 
 // router declaration
 
 app.use("/api/v1/users",userRouter)
 
-export {app}
+export { app };
